@@ -4,8 +4,9 @@ Code for generating synthetic text images for Hindi Language <!-- as described i
 
 This code is the major modification of https://github.com/ankush-me/SynthText for Hindi Language.
 
-**Prerequisites (better if you create a conda environment ):**
+**Prerequisites (better if you create a conda environment and check install.sh first ):**
 
+- python3.5
 - git clone https://github.com/ldo/harfpy.git
 - cd harfpy 
 - python3 setup.py install
@@ -34,9 +35,9 @@ The generated images will be in accordance to 'dset.h5' (these are background im
 
 **Text below is same  as Ankush Gupta's Readme file**
 
-**Synthetic Scene-Text Image Samples**
+<!-- **Synthetic Scene-Text Image Samples**
 ![Synthetic Scene-Text Samples](samples.png "Synthetic Samples")
-
+ -->
 The library is written in Python. The main dependencies are:
 
 ```
