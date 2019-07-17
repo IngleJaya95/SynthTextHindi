@@ -12,18 +12,25 @@ This code is the major modification of https://github.com/ankush-me/SynthText fo
 - cd ..
 - git clone https://github.com/ldo/qahirah.git
 - git clone https://github.com/ldo/python_freetype.git
-- opencv (3.x)
-- pygame
+- opencv (3.x)  conda install -c menpo opencv3
+- pygame conda install -c cogsci pygame 
 - PIL (Image)
 - numpy
 - matplotlib
 - h5py
 - scipy
 
-### Credits:
-- Ankush Gupta (https://github.com/ankush-me) 
-- ldo (https://github.com/ldo)
-- Shubham Patel (https://github.com/lifeisshubh)
+
+**To generate image**
+```
+	python gen.py
+```
+This will store images with text in folder 'do' folder in '.jpg' format and all other info about image(character and word bounding box info, text) will be stored in an h5 file in `results/SynthText.h5`).
+The generated images will be in accordance to 'dset.h5' (these are background images with their segmentation and depth masks info)
+
+
+**Synthetic Scene-Text Hindi Image Samples**
+![Synthetic Scene-Text-Hindi Samples](hindi.jpg "Samples")
 
 **Text below is same  as Ankush Gupta's Readme file**
 
@@ -85,3 +92,7 @@ Note: We do not own the copyright to these images.
 Please refer to the paper for more information, or contact me (email address in the paper). -->
 
 
+### Credits:
+- Ankush Gupta (https://github.com/ankush-me) 
+- ldo (https://github.com/ldo)
+- Shubham Patel (https://github.com/lifeisshubh)
