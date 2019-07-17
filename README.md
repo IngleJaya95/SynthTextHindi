@@ -6,19 +6,19 @@ This code is the major modification of https://github.com/ankush-me/SynthText fo
 
 **Prerequisites (better if you create a conda environment ):**
 
-git clone https://github.com/ldo/harfpy.git
-cd harfpy 
-python3 setup.py install
-cd ..
-git clone https://github.com/ldo/qahirah.git
-git clone https://github.com/ldo/python_freetype.git
-opencv (3.x)
-pygame
-PIL (Image)
-numpy
-matplotlib
-h5py
-scipy
+- git clone https://github.com/ldo/harfpy.git
+- cd harfpy 
+- python3 setup.py install
+- cd ..
+- git clone https://github.com/ldo/qahirah.git
+- git clone https://github.com/ldo/python_freetype.git
+- opencv (3.x)
+- pygame
+- PIL (Image)
+- numpy
+- matplotlib
+- h5py
+- scipy
 
 ### Credits:
 - Ankush Gupta (https://github.com/ankush-me) 
