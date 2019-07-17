@@ -1,6 +1,31 @@
-# SynthText
-Code for generating synthetic text images as described in ["Synthetic Data for Text Localisation in Natural Images", Ankush Gupta, Andrea Vedaldi, Andrew Zisserman, CVPR 2016](http://www.robots.ox.ac.uk/~vgg/data/scenetext/).
+# SynthTextHindi
+Code for generating synthetic text images for Hindi Language <!-- as described in ["Synthetic Data for Text Localisation in Natural Images", Ankush Gupta, Andrea Vedaldi, Andrew Zisserman, CVPR 2016](http://www.robots.ox.ac.uk/~vgg/data/scenetext/).
+ -->
 
+This code is the major modification of https://github.com/ankush-me/SynthText for Hindi Language.
+
+**Prerequisites (better if you create a conda environment ):**
+
+git clone https://github.com/ldo/harfpy.git
+cd harfpy 
+python3 setup.py install
+cd ..
+git clone https://github.com/ldo/qahirah.git
+git clone https://github.com/ldo/python_freetype.git
+opencv (3.x)
+pygame
+PIL (Image)
+numpy
+matplotlib
+h5py
+scipy
+
+### Credits:
+- Ankush Gupta (https://github.com/ankush-me) 
+- ldo (https://github.com/ldo)
+- Shubham Patel (https://github.com/lifeisshubh)
+
+**Text below is same  as Ankush Gupta's Readme file**
 
 **Synthetic Scene-Text Image Samples**
 ![Synthetic Scene-Text Samples](samples.png "Synthetic Samples")
@@ -42,7 +67,7 @@ Segmentation and depth-maps are required to use new images as background. Sample
 For an explanation of the fields in `dset.h5` (e.g.: `seg`,`area`,`label`), please check this [comment](https://github.com/ankush-me/SynthText/issues/5#issuecomment-274490044).
 
 ### Pre-processed Background Images
-The 8,000 background images used in the paper, along with their segmentation and depth masks, have been uploaded here:
+The 8,000 background images used in the paper(["Synthetic Data for Text Localisation in Natural Images", Ankush Gupta, Andrea Vedaldi, Andrew Zisserman, CVPR 2016](http://www.robots.ox.ac.uk/~vgg/data/scenetext/)), along with their segmentation and depth masks, have been uploaded here:
 `http://www.robots.ox.ac.uk/~vgg/data/scenetext/preproc/<filename>`, where, `<filename>` can be:
 
 - `imnames.cp` [180K]: names of filtered files, i.e., those files which do not contain text
@@ -50,12 +75,13 @@ The 8,000 background images used in the paper, along with their segmentation and
 - `depth.h5` [15G]: depth maps
 - `seg.h5` [6.9G]: segmentation maps
 
-Note: I do not own the copyright to these images.
+Note: We do not own the copyright to these images.
 
-### Generating Samples with Text in non-Latin (English) Scripts
+<!-- ### Generating Samples with Text in non-Latin (English) Scripts
 - @JarveeLee has modified the pipeline for generating samples with Chinese text [here](https://github.com/JarveeLee/SynthText_Chinese_version).
 - @adavoudi has modified it for arabic/persian script, which flows from right-to-left [here](https://github.com/adavoudi/SynthText).
 
 ### Further Information
-Please refer to the paper for more information, or contact me (email address in the paper).
+Please refer to the paper for more information, or contact me (email address in the paper). -->
+
 
